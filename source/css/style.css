@@ -1,0 +1,1408 @@
+/*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+   * Remove default margin.
+   */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+     ========================================================================== */
+/**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+   */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+     ========================================================================== */
+/**
+   * Remove the gray background color from active links in IE 10.
+   */
+a {
+  background-color: transparent;
+}
+
+/**
+   * Improve readability when focused and also mouse hovered in all browsers.
+   */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+   * Address styling not present in Safari and Chrome.
+   */
+dfn {
+  font-style: italic;
+}
+
+/**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+   * Address styling not present in IE 8/9.
+   */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+   * Address inconsistent and variable font size in all browsers.
+   */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+img {
+  border: 0;
+}
+
+/**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+   * Address differences between Firefox and other browsers.
+   */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+/**
+   * Contain overflow in all browsers.
+   */
+pre {
+  overflow: auto;
+}
+
+/**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+/**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+button {
+  overflow: visible;
+}
+
+/**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+   * Re-set default cursor for disabled elements.
+   */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+   * Remove inner padding and border in Firefox 4+.
+   */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+input {
+  line-height: normal;
+}
+
+/**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+   *    (include `-moz` to future-proof).
+   */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * Define consistent border, margin, and padding.
+   */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+   */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * Don't inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+     ========================================================================== */
+/**
+   * Remove most spacing between table cells.
+   */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* basic */
+.pagenation {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+  margin: 1.25rem 0 1.875rem;
+  width: 100%;
+}
+
+.pagenation a {
+  background: white;
+}
+
+.pagenation a,
+.pagenation strong {
+  display: inline-block;
+  vertical-align: top;
+  font: 0.45455;
+  color: #555;
+  border: 1px solid #e2e2e2;
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0 0.0625rem;
+}
+
+@media only screen and (1200px) {
+  .pagenation a,
+  .pagenation strong {
+    font: 14px/32px;
+    width: 32px;
+    height: 32px;
+    margin: 0 2px;
+  }
+}
+
+.pagenation a.jump, .pagenation a.move,
+.pagenation strong.jump,
+.pagenation strong.move {
+  font-size: 0;
+}
+
+.pagenation a.jump i, .pagenation a.move i,
+.pagenation strong.jump i,
+.pagenation strong.move i {
+  font-size: 0.625rem;
+}
+
+@media only screen and (1200px) {
+  .pagenation a.jump i, .pagenation a.move i,
+  .pagenation strong.jump i,
+  .pagenation strong.move i {
+    font-size: 14px;
+  }
+}
+
+.pagenation a.jump,
+.pagenation strong.jump {
+  width: auto;
+  background: #efefef;
+  padding: 0 0.625rem;
+}
+
+.pagenation a.jump i::before,
+.pagenation strong.jump i::before {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+.pagenation .active,
+.pagenation strong {
+  background: #0075bc;
+  color: white;
+  font-weight: normal;
+  border-color: transparent;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  border-radius: 0;
+  background-clip: padding-box;
+  /*
+    @media all and (max-width: 1199px) {
+        appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -webkit-appearance: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+*/
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/*font*/
+html {
+  min-width: 320px;
+  max-width: 100%;
+  font-size: 14px;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Noto Sans KR", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+  color: #333;
+}
+
+.sr-only {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  clip: rect(0, 0, 0, 0) !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* style */
+body {
+  /* header */
+}
+
+body .container {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  vertical-align: top;
+  padding: 0 0.625rem;
+}
+
+@media (min-width: 1200px) {
+  body .container {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+    padding: 0;
+  }
+}
+
+body header {
+  text-align: center;
+}
+
+body header .container {
+  height: 58px;
+}
+
+@media (min-width: 1200px) {
+  body header .container {
+    height: 110px;
+  }
+}
+
+body header .container h1 {
+  position: relative;
+  z-index: 1000;
+  width: 225px;
+  height: 34px;
+  font-size: 0;
+  margin: 14px 0 0;
+  background: url("../images/logo.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body header .container h1 {
+    width: 294px;
+    height: 43px;
+    margin: 26px 0 0;
+  }
+}
+
+body header .container button {
+  font-size: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0 10px;
+  height: 58px;
+  background: none;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  body header .container button {
+    display: none;
+  }
+}
+
+body header .container button i {
+  margin: 4px 0 0;
+  font-size: 34px;
+}
+
+@media (max-width: 1199px) {
+  body nav#main-menu {
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #fff;
+  }
+  body nav#main-menu.on {
+    display: block;
+  }
+  body nav#main-menu ul.menu {
+    margin: 100px 0 0;
+    padding: 0 20px;
+    list-style: none;
+  }
+  body nav#main-menu ul.menu li a {
+    font-size: 22px;
+    color: #222;
+    font-weight: 600;
+    line-height: 55px;
+  }
+  body nav#main-menu ul.tools {
+    margin: 30px 0 0;
+    padding: 0 20px;
+    list-style: none;
+  }
+  body nav#main-menu ul.tools li a {
+    line-height: 36px;
+    font-size: 14px;
+  }
+  body nav#main-menu ul.tools li a i {
+    display: none;
+  }
+  body nav#main-menu button {
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0 10px;
+    height: 58px;
+    background: none;
+    border: none;
+  }
+  body nav#main-menu button i {
+    margin: 4px 0 0;
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body nav#main-menu ul.menu {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    margin-left: -260px;
+  }
+  body nav#main-menu ul.menu li {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  body nav#main-menu ul.menu li a {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  body nav#main-menu ul.tools {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 28px;
+    margin-left: 270px;
+    list-style: none;
+  }
+  body nav#main-menu ul.tools li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  body nav#main-menu ul.tools li a {
+    font-size: 14px;
+  }
+  body nav#main-menu ul.tools li a i {
+    font-size: 24px;
+    position: relative;
+    left: -4px;
+    top: 5px;
+  }
+  body nav#main-menu button {
+    display: none;
+  }
+}
+
+body div#content {
+  /* SUB */
+  /* SUB */
+}
+
+body div#content.main section.main-slider {
+  position: relative;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider {
+    padding-bottom: 40px;
+  }
+}
+
+body div#content.main section.main-slider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  background: #FF9900;
+}
+
+body div#content.main section.main-slider div.container fieldset {
+  position: absolute;
+  z-index: 800;
+  left: 50%;
+  top: 180px;
+  margin: 0 0 0 -135px;
+  padding: 0;
+  border-radius: 10px;
+  background: #fff;
+  width: 270px;
+  height: 50px;
+  border: none;
+  position: absolute;
+  font-size: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container fieldset {
+    top: 180px;
+    margin: 0 0 0 -233px;
+    width: 466px;
+    height: 66px;
+  }
+}
+
+body div#content.main section.main-slider div.container fieldset legend {
+  display: none;
+}
+
+body div#content.main section.main-slider div.container fieldset input {
+  border: none;
+  width: 220px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 20px;
+  vertical-align: top;
+  background: transparent;
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container fieldset input {
+    width: 400px;
+    height: 66px;
+  }
+}
+
+body div#content.main section.main-slider div.container fieldset button {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  vertical-align: top;
+  background: transparent;
+  outline: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container fieldset button {
+    width: 66px;
+    height: 66px;
+  }
+}
+
+body div#content.main section.main-slider div.container fieldset button i {
+  font-size: 28px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container fieldset button i {
+    font-size: 34px;
+  }
+}
+
+body div#content.main section.main-slider div.container div.slider {
+  height: 415px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container div.slider {
+    width: 1200px;
+    height: 430px;
+  }
+}
+
+body div#content.main section.main-slider div.container div.slider div.slide {
+  display: inline-block;
+  height: 415px;
+  text-align: center;
+  position: relative;
+}
+
+body div#content.main section.main-slider div.container div.slider div.slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 20px;
+  z-index: 200;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container div.slider div.slide {
+    width: 1200px;
+    height: 430px;
+  }
+}
+
+body div#content.main section.main-slider div.container div.slider div.slide a {
+  display: inline-block;
+  position: relative;
+  margin-top: 100px;
+  font-size: 34px;
+  color: #FFDD00;
+  z-index: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider div.container div.slider div.slide a {
+    font-size: 46px;
+  }
+}
+
+body div#content.main section.main-slider div.container div.slider div.slide img {
+  display: none;
+}
+
+body div#content.main section.main-slider div.container div.slider ul.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  right: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body div#content.main section.main-slider div.container div.slider ul.slick-dots li {
+  display: inline-block;
+  padding: 0 2px;
+}
+
+body div#content.main section.main-slider div.container div.slider ul.slick-dots li button {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body div#content.main section.main-slider div.container div.slider ul.slick-dots li.slick-active button {
+  background: white;
+}
+
+body div#content.main section.main-slider > button {
+  position: absolute;
+  bottom: 30px;
+  font-size: 0;
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider > button {
+    bottom: 220px;
+  }
+}
+
+body div#content.main section.main-slider > button.left {
+  left: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider > button.left {
+    left: 50%;
+    margin-left: -600px;
+  }
+}
+
+body div#content.main section.main-slider > button.right {
+  right: 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider > button.right {
+    left: 50%;
+    margin-left: 510px;
+    right: auto;
+  }
+}
+
+body div#content.main section.main-slider > button i {
+  font-size: 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.main-slider > button i {
+    font-size: 80px;
+  }
+}
+
+body div#content.main section.ai {
+  background: #F4F4F4;
+  text-align: center;
+}
+
+body div#content.main section.ai div.container {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container {
+    padding: 60px 0 50px 200px;
+  }
+}
+
+body div#content.main section.ai div.container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container h2 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+body div#content.main section.ai div.container h2 small {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 0 0;
+  margin: 20px 0 0;
+}
+
+body div#content.main section.ai div.container h2 small::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #900000;
+  top: 0;
+  left: 50%;
+  width: 40px;
+  height: 6px;
+  margin-left: -20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container h2 small::before {
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+body div#content.main section.ai div.container div.slider {
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+
+body div#content.main section.ai div.container div.slider div.slide {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  height: 280px;
+  display: inline-block;
+  margin: 0 10px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container div.slider div.slide {
+    margin: 0 5px;
+    height: 314px;
+  }
+}
+
+body div#content.main section.ai div.container div.slider div.slide a p.image {
+  margin: 0;
+  height: 190px;
+}
+
+body div#content.main section.ai div.container div.slider div.slide a p.image img {
+  display: none;
+}
+
+body div#content.main section.ai div.container div.slider div.slide a h3 {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container div.slider div.slide a h3 {
+    top: 210px;
+  }
+}
+
+body div#content.main section.ai div.container div.slider div.slide a p.price {
+  position: absolute;
+  right: 20px;
+  top: 202px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container div.slider div.slide a p.price {
+    top: 212px;
+  }
+}
+
+body div#content.main section.ai div.container div.slider div.slide a p.text {
+  position: absolute;
+  left: 20px;
+  top: 242px;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container div.slider div.slide a p.text {
+    top: 262px;
+  }
+}
+
+body div#content.main section.ai div.container button {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  margin: 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ai div.container button {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
+  body div#content.main section.ai div.container button.left {
+    left: 0;
+  }
+  body div#content.main section.ai div.container button.right {
+    left: 50px;
+  }
+}
+
+body div#content.main section.ai div.container button i {
+  font-size: 30px;
+  color: #555;
+}
+
+body div#content.main section.ticket {
+  background: #fff;
+  text-align: center;
+}
+
+body div#content.main section.ticket div.container {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container {
+    padding: 60px 0 50px 200px;
+  }
+}
+
+body div#content.main section.ticket div.container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 100px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container h2 {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+body div#content.main section.ticket div.container div.category {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 0 0;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.category {
+    top: 130px;
+    right: auto;
+  }
+}
+
+body div#content.main section.ticket div.container div.category::before {
+  content: "";
+  display: block;
+  position: relative;
+  background: #900000;
+  top: -20px;
+  left: 50%;
+  width: 40px;
+  height: 6px;
+  margin-left: -20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.category::before {
+    top: -30px;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+body div#content.main section.ticket div.container div.category a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.category a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content.main section.ticket div.container div.category a.on {
+  color: #900000;
+  text-decoration: underline;
+}
+
+body div#content.main section.ticket div.container div.slider {
+  overflow: hidden;
+  margin: 0 0 20px;
+  padding: 0 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.slider {
+    padding: 0;
+  }
+}
+
+body div#content.main section.ticket div.container div.slider div.slide {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+  margin: 0 0 20px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+body div#content.main section.ticket div.container div.slider div.slide:nth-of-type(n+4) {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.slider div.slide {
+    width: calc((100% - 30px) / 3);
+    margin: 0 5px 20px;
+    height: 314px;
+  }
+  body div#content.main section.ticket div.container div.slider div.slide:nth-of-type(n+4) {
+    display: inline-block;
+  }
+}
+
+body div#content.main section.ticket div.container div.slider div.slide a p.image {
+  margin: 0;
+  height: 190px;
+}
+
+body div#content.main section.ticket div.container div.slider div.slide a p.image img {
+  display: none;
+}
+
+body div#content.main section.ticket div.container div.slider div.slide a h3 {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.slider div.slide a h3 {
+    top: 210px;
+  }
+}
+
+body div#content.main section.ticket div.container div.slider div.slide a p.price {
+  position: absolute;
+  right: 20px;
+  top: 202px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.slider div.slide a p.price {
+    top: 212px;
+  }
+}
+
+body div#content.main section.ticket div.container div.slider div.slide a p.text {
+  position: absolute;
+  left: 20px;
+  top: 242px;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container div.slider div.slide a p.text {
+    top: 262px;
+  }
+}
+
+body div#content.main section.ticket div.container a.more {
+  display: inline-block;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  margin: 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content.main section.ticket div.container a.more {
+    position: absolute;
+    left: 0;
+    top: 320px;
+  }
+}
+
+body div#content.main section.ticket div.container a.more i {
+  font-size: 30px;
+  line-height: 45px;
+  color: #555;
+}
+
+body footer#footer {
+  background: #2B2C2E;
+  text-align: center;
+}
+
+body footer#footer .container {
+  color: #999;
+}
+
+@media (min-width: 1200px) {
+  body footer#footer .container {
+    padding: 30px 0 30px 340px;
+  }
+}
+
+body footer#footer .container h2 {
+  position: relative;
+  z-index: 1000;
+  width: 225px;
+  height: 34px;
+  font-size: 0;
+  margin: 20px auto;
+  background: url("../images/logoB.svg") no-repeat center/100% auto;
+}
+
+@media (min-width: 1200px) {
+  body footer#footer .container h2 {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 294px;
+    height: 43px;
+    margin: 26px 0 0;
+  }
+}
+
+body footer#footer .container ul {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body footer#footer .container ul {
+    text-align: left;
+  }
+}
+
+body footer#footer .container ul li {
+  display: inline-block;
+}
+
+body footer#footer .container ul li a {
+  color: #fff;
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+body footer#footer .container address {
+  text-align: center;
+  font-style: normal;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body footer#footer .container address {
+    text-align: left;
+  }
+}
+
+body footer#footer .container address p {
+  margin: 0 0 4px;
+}
+
+body footer#footer .container address p a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+$myfont: "Noto Sans KR";
+
+@mixin txt($weight) {
+    @if $weight == light {
+        font-weight:300;
+    }
+    @else if $weight == normal {
+        font-weight:400;
+    }
+    @else if $weight == bold {
+        font-weight:700;
+    }
+    @else if $weight == bolder {
+        font-weight:800;
+    }
+}
