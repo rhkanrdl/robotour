@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
 
   /* STAR_RATE*/
-  var $starRate = $('.star-rate');
+  var $starRate = $('fieldset .star-rate');
   if ($starRate.length > 0) $starRate.on('click', 'a', function() {
     var starValue = $(this).attr("data");
     $starRate.find('a').each(function() {
