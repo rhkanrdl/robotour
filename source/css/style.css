@@ -414,20 +414,22 @@ th {
 .pagenation strong {
   display: inline-block;
   vertical-align: top;
-  font: 0.45455;
+  font-size: 14px;
+  line-height: 36px;
   color: #555;
   border: 1px solid #e2e2e2;
-  width: 1.375rem;
-  height: 1.375rem;
-  margin: 0 0.0625rem;
+  width: 36px;
+  height: 36px;
+  margin: 0 2px;
 }
 
-@media only screen and (1200px) {
+@media (min-width: 1200px) {
   .pagenation a,
   .pagenation strong {
-    font: 14px/32px;
-    width: 32px;
-    height: 32px;
+    font-size: 14px;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
     margin: 0 2px;
   }
 }
@@ -441,14 +443,16 @@ th {
 .pagenation a.jump i, .pagenation a.move i,
 .pagenation strong.jump i,
 .pagenation strong.move i {
-  font-size: 0.625rem;
+  font-size: 16px;
+  line-height: 32px;
 }
 
-@media only screen and (1200px) {
+@media (min-width: 1200px) {
   .pagenation a.jump i, .pagenation a.move i,
   .pagenation strong.jump i,
   .pagenation strong.move i {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 38px;
   }
 }
 
@@ -468,7 +472,7 @@ th {
 
 .pagenation .active,
 .pagenation strong {
-  background: #0075bc;
+  background: #900000;
   color: white;
   font-weight: normal;
   border-color: transparent;
@@ -593,6 +597,12 @@ body header .container h1 {
     height: 43px;
     margin: 26px 0 0;
   }
+}
+
+body header .container h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 body header .container button {
@@ -1100,6 +1110,7 @@ body div#content.main section.ai div.container button {
   font-size: 0;
   margin: 0 0 20px;
   border: 1px solid #ccc;
+  background: #fff;
 }
 
 @media (min-width: 1200px) {
@@ -1325,6 +1336,649 @@ body div#content.main section.ticket div.container a.more i {
   font-size: 30px;
   line-height: 45px;
   color: #555;
+}
+
+body div#content.sub section.sub-list {
+  background: #f4f4f4;
+  text-align: center;
+}
+
+body div#content.sub section.sub-list div.container {
+  text-align: center;
+  padding: 30px 0 30px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container {
+    padding: 50px 0 50px;
+  }
+}
+
+body div#content.sub section.sub-list div.container h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 80px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container h2 {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+
+body div#content.sub section.sub-list div.container h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  background: #900000;
+  bottom: -70px;
+  left: 50%;
+  width: 40px;
+  height: 6px;
+  margin-left: -20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container h2::before {
+    left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 3px;
+    bottom: -86px;
+    background: #222;
+  }
+}
+
+body div#content.sub section.sub-list div.container h2 ul.navigation {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container h2 ul.navigation {
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body div#content.sub section.sub-list div.container h2 ul.navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 400;
+    color: #555;
+  }
+  body div#content.sub section.sub-list div.container h2 ul.navigation li:first-child:after {
+    display: inline-block;
+    padding-left: 5px;
+    color: #999;
+    content: "/";
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 0 0;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.category {
+    top: 130px;
+    right: auto;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.category a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category a.on {
+  color: #900000;
+  text-decoration: underline;
+}
+
+body div#content.sub section.sub-list div.container div.list {
+  overflow: hidden;
+  margin: 0 0 20px;
+  padding: 0 10px 0;
+  font-size: 0;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.list {
+    padding: 0;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.list div.item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+  margin: 0 0 20px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.list div.item {
+    width: calc((100% - 60px) / 4);
+    margin: 0 20px 20px 0;
+    height: 314px;
+  }
+  body div#content.sub section.sub-list div.container div.list div.item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.list div.item a p.image {
+  margin: 0;
+  height: 190px;
+}
+
+body div#content.sub section.sub-list div.container div.list div.item a p.image img {
+  display: none;
+}
+
+body div#content.sub section.sub-list div.container div.list div.item a h3 {
+  position: absolute;
+  left: 20px;
+  top: 200px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.list div.item a h3 {
+    top: 210px;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.list div.item a p.price {
+  position: absolute;
+  right: 20px;
+  top: 202px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.list div.item a p.price {
+    top: 212px;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.list div.item a p.text {
+  position: absolute;
+  left: 20px;
+  top: 242px;
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.list div.item a p.text {
+    top: 262px;
+  }
+}
+
+body div#content.sub section.sub-list div.container a.more {
+  display: inline-block;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  margin: 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container a.more {
+    position: absolute;
+    left: 0;
+    top: 320px;
+  }
+}
+
+body div#content.sub section.sub-list div.container a.more i {
+  font-size: 30px;
+  line-height: 45px;
+  color: #555;
+}
+
+body div#content.sub section.sub-view-header {
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header {
+    padding-bottom: 20px;
+  }
+}
+
+body div#content.sub section.sub-view-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  background: #222;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header::before {
+    background: #EBEBEB;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container {
+  text-align: center;
+  padding: -60px 0 30px;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container {
+    height: 526px;
+    padding: -60px 0 50px;
+    overflow: hidden;
+  }
+  body div#content.sub section.sub-view-header div.container:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 512px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container p.image {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  height: 184px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container p.image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 526px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container p.image img {
+  display: none;
+}
+
+body div#content.sub section.sub-view-header div.container h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 20px 0 30px;
+  font-weight: 400;
+  color: #FFDD00;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container h2 {
+    position: relative;
+    z-index: 10;
+    margin: 40px 0 0 50px;
+    text-align: left;
+    font-size: 46px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container dl.info {
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container dl.info {
+    position: relative;
+    z-index: 10;
+    margin: 30px 0 0 50px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container dl.info dt {
+  float: left;
+  width: 70px;
+}
+
+body div#content.sub section.sub-view-header div.container dl.info dd {
+  padding: 0 0 6px 70px;
+}
+
+body div#content.sub section.sub-view-header div.container ul.info {
+  background: #000;
+  list-style: none;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container ul.info {
+    position: relative;
+    z-index: 10;
+    margin: 10px 0 0 0;
+    width: 512px;
+    text-align: left;
+    padding-left: 50px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container ul.info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #fff;
+}
+
+body div#content.sub section.sub-view-header div.container ul.info li i {
+  color: #FFDD00;
+}
+
+body div#content.sub section.sub-view-header div.container ul.info li span {
+  display: inline-block;
+  padding: 0 0 0 6px;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc {
+  margin: 20px 0;
+  text-align: left;
+  color: #fff;
+  font-size: 18px;
+  word-break: keep-all;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container dl.calc {
+    position: relative;
+    z-index: 10;
+    margin: 30px 0 0 50px;
+    width: 410px;
+  }
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dt {
+  float: left;
+  width: 70px;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dd {
+  text-align: right;
+  padding: 0 0 6px 0;
+  font-size: 0;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dd strong {
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dd button {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dd span {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #fff;
+  border-left: none;
+  border-right: none;
+  height: 32px;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+body div#content.sub section.sub-view-header div.container dl.calc dd span input {
+  margin: 0;
+  width: 40px;
+  border: none;
+  background: transparent;
+  text-align: right;
+}
+
+body div#content.sub section.sub-view-header div.container button.buy {
+  background: #FF9900;
+  width: 100%;
+  height: 56px;
+  border: none;
+  border-radius: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 10px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-header div.container button.buy {
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin: 20px 0 0 50px;
+    width: 410px;
+  }
+}
+
+body div#content.sub section.sub-view-info {
+  text-align: center;
+}
+
+body div#content.sub section.sub-view-info div.container ul.tabs {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid #ccc;
+}
+
+body div#content.sub section.sub-view-info div.container ul.tabs li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+body div#content.sub section.sub-view-info div.container ul.tabs li a {
+  position: relative;
+  top: 2px;
+  display: block;
+  line-height: 94px;
+  font-size: 22px;
+  border-bottom: 4px solid transparent;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-info div.container ul.tabs li a {
+    line-height: 116px;
+    font-size: 28px;
+  }
+}
+
+body div#content.sub section.sub-view-info div.container ul.tabs li a.active {
+  font-weight: 600;
+  color: #222;
+  border-color: #FF9900;
+}
+
+body div#content.sub section.sub-view-info div.container div.text {
+  font-size: 16px;
+  color: #555;
+  margin: 30px 0;
+}
+
+body div#content.sub section.sub-view-info div.container div.text.info {
+  border: 1px solid #FF9900;
+  padding: 20px 20px 10px;
+  background: #faf7f2;
+}
+
+body div#content.sub section.sub-view-info div.container div.text p {
+  margin: 0 0 10px;
+}
+
+body div#content.sub section.sub-view-info div.container div.text p.image {
+  margin: 20px 0;
+  text-align: center;
+}
+
+body div#content.sub section.sub-view-info div.container div.text p.image img {
+  max-width: 100%;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply {
+  border: none;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 0;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply legend {
+  display: none;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply h3 {
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply div.star-rate a {
+  font-size: 18px;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply div.star-rate a i.bxs-star {
+  color: #FF9900;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply div.star-rate a i.bx-star {
+  color: #999;
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #F2F2F2;
+  height: 144px;
+  margin: 20px 0 0;
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-info div.container fieldset.reply textarea {
+    width: calc(100% - 180px);
+    vertical-align: top;
+  }
+}
+
+body div#content.sub section.sub-view-info div.container fieldset.reply button {
+  background: #222;
+  border: none;
+  font-size: 20px;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-view-info div.container fieldset.reply button {
+    vertical-align: top;
+    width: 180px;
+    height: 144px;
+    margin: 20px 0 0;
+  }
+}
+
+body div#content.sub section.sub-view-info div.container ul.list {
+  margin: 20px 0 40px;
+  list-style: none;
+  padding: 0;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li h4 {
+  font-size: 24px;
+  margin: 0 0 20px;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li h4 small {
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  margin: 0 0 0 4px;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li div.text {
+  margin: 0 0 10px;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li div.star-rate a {
+  font-size: 18px;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li div.star-rate a i.bxs-star {
+  color: #FF9900;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li div.star-rate a i.bx-star {
+  color: #999;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li button {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  border: none;
+  background: none;
+  font-size: 0;
+}
+
+body div#content.sub section.sub-view-info div.container ul.list li button i {
+  font-size: 28px;
 }
 
 body footer#footer {
