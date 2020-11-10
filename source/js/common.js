@@ -2,10 +2,22 @@ $(document).ready(function() {
 
     $("#header button").on("click", function(){
         $("nav#main-menu").addClass("on");
+
+        $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+        $('#main-menu').on('scroll touchmove mousewheel', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        });
+
+
     });
 
     $("nav#main-menu button").on("click", function(){
         $("nav#main-menu").removeClass("on");
+
+        $('html, body').removeAttr("style");
+        $('#main-menu').off('scroll touchmove mousewheel');
     });
 
     
