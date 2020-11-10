@@ -1338,35 +1338,6 @@ body div#content.main section.ticket div.container a.more i {
   color: #555;
 }
 
-body div#content.sub ul.navigation {
-  display: none;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub ul.navigation {
-    display: block;
-    font-size: 14px;
-    position: absolute;
-    right: 0;
-    top: 30px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  body div#content.sub ul.navigation li {
-    display: inline-block;
-    margin-left: 5px;
-    font-weight: 400;
-    color: #555;
-  }
-  body div#content.sub ul.navigation li:first-child:after {
-    display: inline-block;
-    padding-left: 5px;
-    color: #999;
-    content: "/";
-  }
-}
-
 body div#content.sub section.sub-list {
   background: #f4f4f4;
   text-align: center;
@@ -1417,6 +1388,71 @@ body div#content.sub section.sub-list div.container h2::before {
     bottom: -86px;
     background: #222;
   }
+}
+
+body div#content.sub section.sub-list div.container h2 ul.navigation {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container h2 ul.navigation {
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body div#content.sub section.sub-list div.container h2 ul.navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 400;
+    color: #555;
+  }
+  body div#content.sub section.sub-list div.container h2 ul.navigation li:first-child:after {
+    display: inline-block;
+    padding-left: 5px;
+    color: #999;
+    content: "/";
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 0 0;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.category {
+    top: 130px;
+    right: auto;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container div.category a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content.sub section.sub-list div.container div.category a.on {
+  color: #900000;
+  text-decoration: underline;
 }
 
 body div#content.sub section.sub-list div.container div.list {
@@ -1507,6 +1543,30 @@ body div#content.sub section.sub-list div.container div.list div.item a p.text {
   body div#content.sub section.sub-list div.container div.list div.item a p.text {
     top: 262px;
   }
+}
+
+body div#content.sub section.sub-list div.container a.more {
+  display: inline-block;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  margin: 0 0 20px;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-list div.container a.more {
+    position: absolute;
+    left: 0;
+    top: 320px;
+  }
+}
+
+body div#content.sub section.sub-list div.container a.more i {
+  font-size: 30px;
+  line-height: 45px;
+  color: #555;
 }
 
 body div#content.sub section.sub-view-header {
@@ -1937,7 +1997,7 @@ body div#content.sub section.sub-order div.container h2 {
   text-align: center;
   font-size: 30px;
   font-weight: 600;
-  margin: 0 0 40px;
+  margin: 0 0 80px;
 }
 
 @media (min-width: 1200px) {
@@ -1970,373 +2030,183 @@ body div#content.sub section.sub-order div.container h2::before {
   }
 }
 
-body div#content.sub section.sub-order div.container div.cart {
+body div#content.sub section.sub-order div.container h2 ul.navigation {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-order div.container h2 ul.navigation {
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body div#content.sub section.sub-order div.container h2 ul.navigation li {
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 400;
+    color: #555;
+  }
+  body div#content.sub section.sub-order div.container h2 ul.navigation li:first-child:after {
+    display: inline-block;
+    padding-left: 5px;
+    color: #999;
+    content: "/";
+  }
+}
+
+body div#content.sub section.sub-order div.container div.category {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 26px 0 0;
+  left: 0;
+  right: 0;
+  top: 90px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-order div.container div.category {
+    top: 130px;
+    right: auto;
+  }
+}
+
+body div#content.sub section.sub-order div.container div.category a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+}
+
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-order div.container div.category a {
+    display: block;
+    margin: 0 0 10px;
+  }
+}
+
+body div#content.sub section.sub-order div.container div.category a.on {
+  color: #900000;
+  text-decoration: underline;
+}
+
+body div#content.sub section.sub-order div.container div.list {
   overflow: hidden;
   margin: 0 0 20px;
+  padding: 0 10px 0;
+  font-size: 0;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart {
-    padding: 10px 0;
+  body div#content.sub section.sub-order div.container div.list {
+    padding: 0;
   }
 }
 
-body div#content.sub section.sub-order div.container div.cart input[type="checkbox"] {
-  width: 30px;
-  height: 30px;
-  vertical-align: top;
-  border-radius: 0;
-}
-
-body div#content.sub section.sub-order div.container div.cart input[type="checkbox"] + label {
-  display: inline-block;
-  vertical-align: top;
-  background: #FF9900;
-  line-height: 30px;
-  color: #fff;
-  padding: 0 10px;
-  border-radius: 3px;
-  margin: 0 0 0 10px;
-}
-
-body div#content.sub section.sub-order div.container div.cart input[type="checkbox"]:checked + label {
-  background: #222;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list {
-  list-style: none;
-  padding: 20px 20px 0 20px;
-  background: #fff;
-  border: 1px solid #ccc;
-  margin: 10px 0 0;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li {
+body div#content.sub section.sub-order div.container div.list div.item {
   position: relative;
-  border-bottom: 1px solid #ccc;
-  padding: 0 0 20px;
-  margin: 0 0 20px;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li:last-child {
-  border: none;
-  margin-bottom: 0;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li input[type="checkbox"] {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart ul.list li {
-    padding: 0 0 20px 170px;
-  }
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li input[type="checkbox"] + label {
-  display: none;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li p.image {
-  width: 100%;
-  height: 184px;
   border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  height: 280px;
+  display: inline-block;
+  margin: 0 0 20px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart ul.list li p.image {
-    position: absolute;
-    left: 40px;
-    top: 0;
-    width: 100px;
-    height: 100px;
-    margin: 0;
-    border-radius: 5px;
+  body div#content.sub section.sub-order div.container div.list div.item {
+    width: calc((100% - 60px) / 4);
+    margin: 0 20px 20px 0;
+    height: 314px;
+  }
+  body div#content.sub section.sub-order div.container div.list div.item:nth-child(4n) {
+    margin-right: 0;
   }
 }
 
-body div#content.sub section.sub-order div.container div.cart ul.list li p.image img {
+body div#content.sub section.sub-order div.container div.list div.item a p.image {
+  margin: 0;
+  height: 190px;
+}
+
+body div#content.sub section.sub-order div.container div.list div.item a p.image img {
   display: none;
 }
 
-body div#content.sub section.sub-order div.container div.cart ul.list li h4 {
-  display: inline-block;
-  font-size: 22px;
-  line-height: 1;
-  margin: 0 0 10px 40px;
-  word-break: keep-all;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart ul.list li h4 {
-    vertical-align: top;
-    margin: 0;
-    width: 260px;
-    line-height: 1.4;
-  }
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc {
-  margin: 20px 0;
-  text-align: left;
-  color: #222;
-  font-size: 14px;
-  word-break: keep-all;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc {
-    display: inline-block;
-    width: 320px;
-    vertical-align: top;
-    margin: 0 0 0 110px;
-  }
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dt {
-  float: left;
-  width: 50px;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd {
-  text-align: right;
-  padding: 0 0 6px 0;
-  font-size: 0;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd strong {
-  font-size: 16px;
-  margin-right: 10px;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd button.plus,
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd button.minus {
-  background: transparent;
-  border: 1px solid #222;
-  width: 28px;
-  height: 28px;
-  font-size: 16px;
-  vertical-align: top;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd button.del {
-  background: transparent;
-  border: 1px solid transparent;
-  background: #555;
-  margin-left: 5px;
-  font-size: 14px;
-  height: 28px;
-  color: #fff;
-  vertical-align: top;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd button.del i {
-  font-size: 16px;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd span {
-  display: inline-block;
-  vertical-align: top;
-  border: 1px solid #222;
-  border-left: none;
-  border-right: none;
-  height: 28px;
-  font-size: 16px;
-  padding: 0 4px;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li dl.calc dd span input {
+body div#content.sub section.sub-order div.container div.list div.item a h3 {
+  position: absolute;
+  left: 20px;
+  top: 200px;
   margin: 0;
-  width: 24px;
-  border: none;
-  background: transparent;
-  text-align: right;
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li p.price {
-  text-align: right;
-  font-size: 18px;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart ul.list li p.price {
-    display: inline-block;
-    width: 290px;
-    vertical-align: top;
-    margin: 0;
-  }
-}
-
-body div#content.sub section.sub-order div.container div.cart ul.list li p.price strong {
-  display: inline-block;
   font-size: 20px;
-  padding: 0 4px 0 10px;
-}
-
-body div#content.sub section.sub-order div.container div.cart div.total {
-  background: #efefef;
-  padding: 10px 20px;
-  margin: 0 0 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-body div#content.sub section.sub-order div.container div.cart div.total p.price {
-  text-align: right;
-  font-size: 18px;
-  margin: 0;
+  font-weight: 600;
 }
 
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.cart div.total p.price {
-    vertical-align: top;
+  body div#content.sub section.sub-order div.container div.list div.item a h3 {
+    top: 210px;
   }
 }
 
-body div#content.sub section.sub-order div.container div.cart div.total p.price strong {
-  display: inline-block;
-  font-size: 24px;
-  padding: 0 4px 0 10px;
-  color: #900000;
-}
-
-body div#content.sub section.sub-order div.container div.cart div.btn-set button.btn {
-  height: 30px;
-  border: none;
-  background: #555;
-  color: #fff;
-}
-
-body div#content.sub section.sub-order div.container div.order-input {
-  font-size: 0;
-}
-
-body div#content.sub section.sub-order div.container div.order-input h3 {
-  font-size: 22px;
-}
-
-body div#content.sub section.sub-order div.container div.order-input ul.input {
-  list-style: none;
+body div#content.sub section.sub-order div.container div.list div.item a p.price {
+  position: absolute;
+  right: 20px;
+  top: 202px;
   margin: 0;
-  padding: 10px 20px 20px;
-  background: #fff;
-  border: 1px solid #ccc;
-}
-
-body div#content.sub section.sub-order div.container div.order-input ul.input label {
-  display: block;
-  padding: 10px 0 4px;
   font-weight: 600;
   font-size: 16px;
 }
 
-body div#content.sub section.sub-order div.container div.order-input ul.input input {
-  height: 50px;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #222;
-  margin: 0 0 4px;
-  font-size: 18px;
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-order div.container div.list div.item a p.price {
+    top: 212px;
+  }
 }
 
-body div#content.sub section.sub-order div.container div.order-input ul.input span {
-  color: #999;
+body div#content.sub section.sub-order div.container div.list div.item a p.text {
+  position: absolute;
+  left: 20px;
+  top: 242px;
+  margin: 0;
   font-size: 14px;
 }
 
-body div#content.sub section.sub-order div.container div.bill-input {
+@media (min-width: 1200px) {
+  body div#content.sub section.sub-order div.container div.list div.item a p.text {
+    top: 262px;
+  }
+}
+
+body div#content.sub section.sub-order div.container a.more {
+  display: inline-block;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
   font-size: 0;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input h3 {
-  font-size: 22px;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input ul.input {
-  list-style: none;
-  margin: 0;
-  padding: 10px 20px 20px;
-  background: #fff;
+  margin: 0 0 20px;
   border: 1px solid #ccc;
 }
 
-body div#content.sub section.sub-order div.container div.bill-input ul.input label {
-  display: block;
-  padding: 10px 0 4px;
-  font-weight: 600;
-  font-size: 16px;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input ul.input label strong {
-  color: #0099ff;
-  font-size: 20px;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input ul.input input {
-  height: 50px;
-  width: calc(100% - 100px);
-  border: none;
-  border-bottom: 2px solid #222;
-  margin: 0 0 4px;
-  font-size: 18px;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input ul.input button {
-  width: 60px;
-  height: 48px;
-  font-size: 16px;
-  border-color: transparent;
-  color: #fff;
-  background: #0099ff;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input ul.input span {
-  display: inline-block;
-  width: 40px;
-  color: #222;
-  font-size: 16px;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input div.btn-set {
-  margin: 20px 0 30px;
-  font-size: 16px;
-  text-align: center;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input div.btn-set button {
-  height: 50px;
-  padding: 0 16px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-}
-
 @media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.bill-input div.btn-set button {
-    height: 60px;
-    font-size: 20px;
-    margin: 0 4px;
+  body div#content.sub section.sub-order div.container a.more {
+    position: absolute;
+    left: 0;
+    top: 320px;
   }
 }
 
-body div#content.sub section.sub-order div.container div.bill-input div.btn-set button.cancle {
-  background: #999;
-  color: #fff;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input div.btn-set button.charge {
-  background: #555;
-  color: #fff;
-}
-
-body div#content.sub section.sub-order div.container div.bill-input div.btn-set button.order {
-  background: #0099ff;
-  color: #fff;
-}
-
-@media (min-width: 1200px) {
-  body div#content.sub section.sub-order div.container div.bill-input div.btn-set button.order {
-    padding: 0 50px;
-  }
+body div#content.sub section.sub-order div.container a.more i {
+  font-size: 30px;
+  line-height: 45px;
+  color: #555;
 }
 
 body footer#footer {

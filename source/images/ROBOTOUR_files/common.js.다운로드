@@ -28,10 +28,6 @@ $(document).ready(function() {
     $('.sub-view-header p.image').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
     });
-    
-    $('.cart p.image').each(function() {
-        $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
-    });
 
     $('.calc button.minus').click(function () {
         var $input = $(this).parent().find('span input');
