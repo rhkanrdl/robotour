@@ -215,7 +215,7 @@ body {
 
 
 
-    @media (max-width:$screen-size-pc - 1px) {
+    @media (max-width:$screen-size-pc) {
         nav#main-menu {
             position:fixed;
             display:none;
@@ -337,7 +337,6 @@ body {
 
 
     div#content {
-
         /* SUB */
         &.main {
 
@@ -1531,6 +1530,7 @@ body {
                 background:#f4f4f4;
                 text-align:center;
                 padding:30px 0;
+                font-size:14px;
 
                 @media (min-width:$screen-size-pc) {
                     padding:50px 0 50px;
@@ -2517,8 +2517,14 @@ body {
 
                                 @media (min-width:$screen-size-pc) {
                                     width:500px;
-                                    margin:10px auto 60px;
+                                    margin:20px auto 60px;
                                 } 
+
+                                h4 {
+                                    color:#0075bc;
+                                    font-size:18px;
+                                    margin:0 0 10px;
+                                }
 
                                 p {
                                     margin:0 0 4px;
@@ -2553,7 +2559,1653 @@ body {
                     
                 }
             }
+
+            section.sub-board {
+                background:#f4f4f4;
+                text-align:center;
+                padding:30px 0;
+
+                @media (min-width:$screen-size-pc) {
+                    padding:30px 0 50px;
+                } 
+
+
+                div.container {
+                    h2 {
+                        text-align:center;
+                        font-size:30px;
+                        font-weight:600;
+                        margin:0 0 40px;
+
+                        @media (min-width:$screen-size-pc) {
+                            text-align:left;
+                            font-size:36px;
+                        } 
+
+                        &::before {
+                            content:"";
+                            display:block;
+                            position:relative;
+                            background:#900000;
+                            bottom:-70px;
+                            left:50%;
+                            width:40px;
+                            height:6px;
+                            margin-left:-20px;
+
+                            @media (min-width:$screen-size-pc) {
+                                left:0;
+                                margin-left:0;
+                                width: 100%;
+                                height:3px;
+                                bottom:-86px;
+                                background:#222;
+                            } 
+                        }
+                    }
+
+                    div.list {
+                        margin:50px 0 0;
+
+                        @media (min-width:$screen-size-pc) {
+                            margin:60px 0 0;
+                        } 
+
+                        ul.list {
+                            list-style:none;
+                            margin:0;
+                            padding:0;
+
+                            li {
+                                position:relative;
+
+                                a {
+                                    display:block;
+                                    padding:0 0 10px 40px;
+                                    margin:0 0 10px;
+                                    border-bottom:1px solid #ccc;
+
+                                    @media (min-width:$screen-size-pc) {
+                                        padding:0 0 20px 50px;
+                                    } 
+
+
+                                    h4 {
+                                        font-size:20px;
+                                        margin:0 0 6px;
+
+                                        @media (min-width:$screen-size-pc) {
+                                            font-size:24px;
+                                        } 
+                                    }
+
+                                    p {
+                                        margin:0 10px 0 0;
+                                        display:inline-block;
+                                        color:#999;
+
+                                        @media (min-width:$screen-size-pc) {
+                                            font-size:16px;
+                                        } 
+
+                                        u {
+                                            text-decoration:none;
+                                            font-weight:600;
+                                        }
+
+                                        &.num {
+                                            position:absolute;
+                                            left:0;
+                                            top:4px;
+                                            font-size:0;
+                                            color:#999;
+
+                                            u {
+                                                font-size:14px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            
+                        }
+                    }
+
+                    div.view {
+
+                        margin:50px 0 0;
+
+                        @media (min-width:$screen-size-pc) {
+                            margin:60px 0 0;
+                        } 
+
+                        div.board-box {
+                            padding:0 0 20px;
+
+                            h4 {
+                                font-size:20px;
+                                margin:0 0 6px;
+
+                                @media (min-width:$screen-size-pc) {
+                                    font-size:24px;
+                                } 
+                            }
+
+                            ul {
+                                list-style:none;
+                                margin:0;
+                                padding:0;
+
+
+                                li {
+                                    margin:0 10px 0 0;
+                                    display:inline-block;
+                                    color:#999;
+    
+                                    @media (min-width:$screen-size-pc) {
+                                        font-size:16px;
+                                    } 
+    
+                                    u {
+                                        text-decoration:none;
+                                        font-weight:600;
+                                    }
+    
+                                    &.num {
+                                        position:absolute;
+                                        left:0;
+                                        top:4px;
+                                        font-size:0;
+                                        color:#999;
+    
+                                        u {
+                                            font-size:14px;
+                                        }
+                                    }
+                                }
+
+                            }
+
+                            div.line {
+                                padding:0 0 10px;
+                                margin:0 0 10px;
+                                font-size:0;
+                                border-bottom:2px solid #222;
+                            }
+
+
+                            label {
+                                font-size:16px;
+                                display:inline-block;
+                                vertical-align:top;
+                                width:90px;
+                                line-height:38px;
+                            }
+
+                            input {
+                                font-size:16px;
+                                height:38px;
+                                width:calc(100% - 90px);
+                                border:none;
+                                background:none;
+                                outline:none;
+                            }
+
+                        }
+
+                        div.board-text {
+                            padding:10px 0;
+
+
+                            label {
+                                font-size:16px;
+                                display:inline-block;
+                                vertical-align:top;
+                                margin-bottom:10px;
+                            }
+
+                            textarea {
+                                border:2px solid #222;
+                                width:100%;
+                                min-height:200px;
+                                padding:10px;
+
+                            }
+
+                            p {
+                                margin:0 0 4px;
+
+                                &.image {
+                                    margin:20px 0;
+                                    text-align:center;
+                                }
+                            }
+
+                            img {
+                                max-width:100%;
+                            }
+                        }
+
+                        div.file {
+                            &>button {
+                                height:44px;
+                                padding:0 40px;
+                                color:#fff;
+                                border:none;
+                                background:#222;
+                            }
+                        }
+
+                        ul.file {
+                            list-style:none;
+                            margin:20px 0;
+                            padding:10px;
+                            background:#efefef;
+
+
+                            li {
+                                a {
+                                    color:#0075bc;
+                                    text-decoration:underline;
+                                }
+                                button {
+                                    font-size:0;
+                                    border:none;
+                                    background:#222;
+                                    color:#fff;
+
+                                    i {
+                                        font-size:14px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    
+
+                    div.btns {
+                        margin:20px 0 30px;
+                        font-size:14px;
+                        text-align:center;
+
+                        @media (min-width:$screen-size-pc) {
+                            text-align:right;
+                        } 
+
+                        button {
+                            display:inline-block;
+                            line-height:38px;
+                            padding:0 30px;
+                            border:1px solid rgba(0,0,0,0.4);
+                            background:#efefef;
+                            color:#222;
+
+                            @media (min-width:$screen-size-pc) {
+
+                                line-height:42px;
+                                margin:0 2px;
+                            } 
+
+                            &.main {
+                                color:#fff;
+                                background:#0075bc;
+                            }
+
+                            &.sub {
+                                background:#222;
+                                color:#fff;
+                            }
+                        }
+
+                    }
+
+                    
+                }
+
+            }
+
+
+            div.sub-layout {
+                display:inline-block;
+                width:100%;
+                text-align:center;
+                font-size:0;
+                background:#f4f4f4;
+
+                @media (min-width:$screen-size-pc) {
+                    min-height:650px;
+                } 
+        
+
+                div.container {
+                    width:100%;
+                }
+
+                aside {
+                    display:inline-block;
+                    width:100%;
+                    font-size:14px;
+                    background:#222;
+
+
+                    @media (min-width:$screen-size-pc) {
+                        width:200px;
+                        margin-right:40px;
+                        vertical-align:top;
+                        background:#fff;
+                        margin-top:50px;
+                    }
+
+                    a.on {
+                        color:#FFDD00;
+                        text-decoration:underline;
+                        @media (min-width:$screen-size-pc) {
+                            color:#900000;
+                        }
+    
+                    }
+
+
+                    h2 {
+                        margin:0;
+                        background:#900000;
+                        color:#fff;
+                        padding:10px 0;
+
+                        @media (min-width:$screen-size-pc) {
+                            padding:20px 0;
+                            background:#222;
+                        } 
+                        
+                        small {
+                            display:block;
+                            color:#FFDD00;
+                            font-weight:400;
+                        }
+                    }
+
+                    button {
+                        display:block;
+                        width:100%;
+                        border:none;
+                        background:#900000 - 20%;
+                        padding:10px 0;
+                        color:#fff;
+
+                        @media (min-width:$screen-size-pc) {
+                            display:none;
+                        } 
+                    }
+
+                    &>ul {
+                        display:none;
+                        list-style:none;
+                        margin:20px;
+                        padding:0;
+                        text-align:left;
+
+                        &.on  {
+                            display:block;
+                        }
+
+                        @media (min-width:$screen-size-pc) {
+                            display:block;
+                        } 
+
+                        &>li {
+
+                            @media (min-width:$screen-size-pc) {
+                                border-bottom:1px solid #e4e4e4;
+                            } 
+
+                            &>a {
+                                display:block;
+                                font-size:16px;
+                                font-weight:600;
+                                line-height:38px;
+                                color:#fff;
+
+                                @media (min-width:$screen-size-pc) {
+                                    color:#222;
+                                } 
+                            }
+
+                            ul {
+                                list-style:none;
+                                margin:0 0 10px;
+                                padding:0;
+                                
+                                li {
+                                    a {
+                                        display:block;
+                                        color:#fff;
+
+                                        @media (min-width:$screen-size-pc) {
+                                            color:#222;
+                                        } 
+
+                                        &::before {
+                                            content:"-";
+                                            display:inline-block;
+                                            padding:0 4px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                section {
+
+                    @media (min-width:$screen-size-pc) {
+                        display:inline-block;
+                        vertical-align:top;
+                        width:960px;
+                    }
+
+
+
+                    &.sub-order {
+                        background:#f4f4f4;
+                        text-align:center;
+                        padding:30px 0;
+                        font-size:14px;
+        
+                        @media (min-width:$screen-size-pc) {
+                            padding:50px 0 50px;
+                        } 
+        
+        
+                        div.container {
+                            h2 {
+                                text-align:center;
+                                font-size:30px;
+                                font-weight:600;
+                                margin:0 0 40px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                    font-size:36px;
+                                } 
+        
+                                &::before {
+                                    content:"";
+                                    display:block;
+                                    position:relative;
+                                    background:#900000;
+                                    bottom:-70px;
+                                    left:50%;
+                                    width:40px;
+                                    height:6px;
+                                    margin-left:-20px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        left:0;
+                                        margin-left:0;
+                                        width: 100%;
+                                        height:3px;
+                                        bottom:-86px;
+                                        background:#222;
+                                    } 
+                                }
+                            }
+        
+        
+                            div.cart {
+                                overflow:hidden;
+                                margin:0 0 20px;
+        
+        
+                                @media (min-width:$screen-size-pc) {
+                                    padding:10px 0;
+                                } 
+        
+                                input[type="checkbox"] {
+                                    width:30px;
+                                    height:30px;
+                                    vertical-align:top;
+                                    border-radius:0;
+                                }
+        
+                                input[type="checkbox"] + label {
+                                    display:inline-block;
+                                    vertical-align:top;
+                                    background:#FF9900;
+                                    line-height:30px;
+                                    color:#fff;
+                                    padding:0 10px;
+                                    border-radius:3px;
+                                    margin:0 0 0 10px;
+                                }
+        
+                                input[type="checkbox"]:checked + label {
+                                    background:#222;
+                                }
+        
+                                ul.list {
+                                    list-style:none;
+                                    padding:20px 20px 0 20px;
+                                    background:#fff;
+                                    border:1px solid #ccc;
+                                    margin:10px 0 0;
+        
+                                    li {
+                                        position:relative;
+                                        border-bottom:1px solid #ccc;
+                                        padding:0 0 20px;
+                                        margin:0 0 20px;
+        
+                                        &:last-child {
+                                            border:none;
+                                            margin-bottom:0;
+                                        }
+        
+                                        input[type="checkbox"] {
+                                            position:absolute;
+                                            left:0;
+                                            top:0;
+                                        }
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            padding:0 0 20px 160px;
+        
+                                        } 
+                                        
+        
+                                        input[type="checkbox"] + label {
+                                            display:none;
+                                        }
+        
+                                        p.image {
+                                            width:100%;
+                                            height:184px;
+                                            border-radius:20px;
+        
+                                            @media (min-width:$screen-size-pc) {
+                                                position:absolute;
+                                                left:40px;
+                                                top:0;
+                                                width:100px;
+                                                height:100px;
+                                                margin:0;
+                                                border-radius:5px;
+        
+            
+                                            } 
+        
+                                            img {
+                                                display:none;
+                                            }
+                                        }
+            
+                                        h4 {
+                                            display:inline-block;
+                                            font-size:22px;
+                                            line-height:1;
+                                            margin:0 0 10px 40px;
+                                            word-break:keep-all;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+                                                vertical-align:top;
+                                                margin: 0;
+                                                width:200px;
+                                                line-height:1.4;
+            
+                                            } 
+                                        }
+            
+                                        dl.calc {
+                                            margin:20px 0;
+                                            text-align:left;
+                                            color:#222;
+                                            font-size:14px;
+                                            word-break:keep-all;
+                    
+                                            @media (min-width:$screen-size-pc) {
+                                                display:inline-block;
+                                                width:290px;
+                                                vertical-align:top;
+                                                margin:0 0 0 60px;
+                                            } 
+                    
+                                            dt {
+                                                float:left;
+                                                width:50px;
+                                            }
+                    
+                                            dd {
+                                                text-align:right;
+                                                padding:0 0 6px 0;
+                                                font-size:0;
+                    
+                                                strong {
+                                                    font-size:16px;
+                                                    margin-right:10px;
+                                                }
+                    
+                                                button.plus,
+                                                button.minus {
+                                                    background:transparent;
+                                                    border:1px solid #222;
+                                                    width: 28px;
+                                                    height:28px;
+                                                    font-size:16px;
+                                                    vertical-align:top;
+                                                }
+        
+                                                button.del {
+                                                    background:transparent;
+                                                    border:1px solid transparent;
+                                                    background:#555;
+                                                    margin-left:5px;
+                                                    font-size:14px;
+                                                    height:28px;
+                                                    color:#fff;
+                                                    vertical-align:top;
+        
+                                                    i {
+                                                        font-size:16px;
+                                                    }
+                                                }
+                    
+                                                span {
+                                                    display:inline-block;
+                                                    vertical-align:top;
+                                                    border:1px solid #222;
+                                                    border-left:none;
+                                                    border-right:none;
+                                                    height:28px;
+                                                    font-size:16px;
+                                                    padding:0 4px;
+                                                    
+                                                    input {
+                                                        margin:0;
+                                                        width:24px;
+                                                        border:none;
+                                                        background:transparent;
+                                                        text-align:right;
+                    
+                                                    }
+                                                }
+                                            }
+                                        }
+        
+                                        p.price {
+                                            text-align:right;
+                                            font-size:18px;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+                                                display:inline-block;
+                                                width:200px;
+                                                vertical-align:top;
+                                                margin:0;
+        
+            
+                                            } 
+        
+                                            strong {
+                                                display:inline-block;
+                                                font-size:20px;
+                                                padding:0 4px 0 10px;
+                                            }
+                                        }
+        
+                                    }
+                                }
+                                div.total {
+                                    background:#efefef;
+                                    padding:10px 20px;
+                                    margin:0 0 10px;
+                                    border-bottom:1px solid #ccc;
+        
+                                    p.price {
+                                        text-align:right;
+                                        font-size:18px;
+                                        margin:0;
+                                        
+                                        @media (min-width:$screen-size-pc) {
+        
+                                            vertical-align:top;
+        
+        
+                                        } 
+        
+                                        strong {
+                                            display:inline-block;
+                                            font-size:24px;
+                                            padding:0 4px 0 10px;
+                                            color:#900000;
+                                        }
+                                    }
+                                }
+        
+        
+                                div.btn-set {
+                                    button.btn {
+                                        height:30px;
+                                        border:none;
+                                        background:#555;
+                                        color:#fff;
+                                    }
+                                }
+            
+        
+                            }
+
+                            
+
+                        &>div.btn-set {
+                            margin:20px 0 30px;
+                            font-size:16px;
+                            text-align:center;
+
+                            button {
+                                height:50px;
+                                padding:0 16px;
+                                border:1px solid rgba(0,0,0,0.4);
+
+                                @media (min-width:$screen-size-pc) {
+                                    height:60px;
+                                    font-size:20px;
+                                    margin:0 4px;
+                                    padding:0 50px;
+                                } 
+
+                                background:#555;
+                                color:#fff;
+
+                                &.order {
+                                    background:#0075bc;
+                                    color:#fff;
+                                }
+                            }
+
+                        }
+                            
+                        }
+                    }
+
+
+
+                    &.sub-order-list {
+                        background:#f4f4f4;
+                        text-align:center;
+                        padding:30px 0;
+                        font-size:14px;
+        
+                        @media (min-width:$screen-size-pc) {
+                            padding:50px 0 50px;
+                        } 
+        
+        
+                        div.container {
+                            h2 {
+                                text-align:center;
+                                font-size:30px;
+                                font-weight:600;
+                                margin:0 0 40px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                    font-size:36px;
+                                } 
+        
+                                &::before {
+                                    content:"";
+                                    display:block;
+                                    position:relative;
+                                    background:#900000;
+                                    bottom:-70px;
+                                    left:50%;
+                                    width:40px;
+                                    height:6px;
+                                    margin-left:-20px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        left:0;
+                                        margin-left:0;
+                                        width: 100%;
+                                        height:3px;
+                                        bottom:-86px;
+                                        background:#222;
+                                    } 
+                                }
+                            }
+        
+        
+                            div.order-list {
+                                overflow:hidden;
+                                margin:0 0 20px;
+        
+        
+                                @media (min-width:$screen-size-pc) {
+                                    padding:10px 0;
+                                } 
+        
+                                ul.list {
+                                    list-style:none;
+                                    padding:20px 20px 0 20px;
+                                    background:#fff;
+                                    border:1px solid #ccc;
+                                    margin:10px 0 0;
+        
+                                    li {
+                                        position:relative;
+                                        border-bottom:1px solid #ccc;
+                                        padding:0 0 20px;
+                                        margin:0 0 20px;
+        
+                                        &:last-child {
+                                            border:none;
+                                            margin-bottom:0;
+                                        }
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            padding:0 0 20px 10px;
+        
+                                        } 
+
+            
+                                        h4 {
+                                            display:inline-block;
+                                            font-size:22px;
+                                            line-height:1;
+                                            margin:0 0 20px;
+                                            padding:0 90px 0 0;
+                                            word-break:keep-all;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+                                                vertical-align:top;
+                                                line-height:1.4;
+                                            } 
+
+                                            small {
+                                                display:block;
+                                                font-size:14px;
+                                                font-weight:400;
+                                                color:#0075bc;
+                                                margin:0 0 6px;
+                                            }
+                                        }
+
+                                        p.info {
+                                            margin:0;
+                                            background:#e4e4e4;
+                                            padding:10px;
+                                        }
+
+                                        p.date {
+                                            margin:10px 0 0;
+                                        }
+        
+                                        p.price {
+                                            text-align:right;
+                                            font-size:18px;
+                                            margin:-4px 0 0;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+
+                                                vertical-align:top;
+        
+            
+                                            } 
+        
+                                            strong {
+                                                display:inline-block;
+                                                font-size:20px;
+                                                padding:0 4px 0 10px;
+                                            }
+                                        }
+
+                                        p.status {
+                                            position:absolute;
+                                            right:0;
+                                            top:0;
+                                            margin:0;
+                                            font-size:16px;
+                                            color:#fff;
+                                            padding:6px 10px;
+
+                                            &.stat01 {
+                                                background:#0075bc;
+                                            }
+
+                                            &.stat02 {
+                                                background: #900000;
+                                            }
+
+                                            &.stat03 {
+                                                background: #222;
+                                            }
+
+                                            &.stat04 {
+                                                background: #999;
+                                            }
+                                        }
+        
+                                    }
+                                }
+        
+        
+                                div.btn-set {
+                                    button.btn {
+                                        height:30px;
+                                        border:none;
+                                        background:#555;
+                                        color:#fff;
+                                    }
+                                }
+            
+        
+                            }
+        
+                            div.info-text {
+                                padding:20px;
+                                background:#e4e4e4;
+
+                                h4 {
+                                    margin:0;
+                                    font-size:18px;
+                                }
+
+                                ul {
+                                    list-style:none;
+                                    margin:10px 0 0;
+                                    padding:0 10px;
+                                }
+                            }
+        
+
+                            
+
+                        &>div.btn-set {
+                            margin:20px 0 30px;
+                            font-size:16px;
+                            text-align:center;
+
+                            button {
+                                height:50px;
+                                padding:0 16px;
+                                border:1px solid rgba(0,0,0,0.4);
+
+                                @media (min-width:$screen-size-pc) {
+                                    height:60px;
+                                    font-size:20px;
+                                    margin:0 4px;
+                                    padding:0 50px;
+                                } 
+
+                                background:#555;
+                                color:#fff;
+
+                                &.order {
+                                    background:#0075bc;
+                                    color:#fff;
+                                }
+                            }
+
+                        }
+                            
+                        }
+                    }
+
+
+
+                    &.sub-charge-list {
+                        background:#f4f4f4;
+                        text-align:center;
+                        padding:30px 0;
+                        font-size:14px;
+        
+                        @media (min-width:$screen-size-pc) {
+                            padding:50px 0 50px;
+                        } 
+        
+        
+                        div.container {
+                            h2 {
+                                text-align:center;
+                                font-size:30px;
+                                font-weight:600;
+                                margin:0 0 40px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                    font-size:36px;
+                                } 
+        
+                                &::before {
+                                    content:"";
+                                    display:block;
+                                    position:relative;
+                                    background:#900000;
+                                    bottom:-70px;
+                                    left:50%;
+                                    width:40px;
+                                    height:6px;
+                                    margin-left:-20px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        left:0;
+                                        margin-left:0;
+                                        width: 100%;
+                                        height:3px;
+                                        bottom:-86px;
+                                        background:#222;
+                                    } 
+                                }
+                            }
+
+        
+                            div.charge-list {
+                                overflow:hidden;
+                                margin:0 0 20px;
+        
+        
+                                @media (min-width:$screen-size-pc) {
+                                    padding:10px 0;
+                                } 
+
+                                div.widget {
+                                    border:2px solid #0075bc;
+                                    background:#fff;
+                                    padding:10px;
+        
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        padding:30px;
+                                    } 
+
+                                    ul {
+                                        list-style:none;
+                                        font-size:0;
+                                        padding:0;
+                                        margin:0;
+
+
+                                        li {
+                                            display:inline-block;
+                                            text-align:center;
+                                            vertical-align:top;
+                                            width:50%;
+                                            font-size:32px;
+                                            color:#0075bc;
+                                            font-weight:600;
+        
+        
+                                            @media (min-width:$screen-size-pc) {
+                                                font-size:48px;
+                                            } 
+
+                                            &:first-child {
+                                                border-right:1px solid #ccc;
+                                            }
+
+                                            h4 {
+                                                font-size:18px;
+                                                margin:0 0 10px;
+                                                color:#222;
+        
+        
+                                                @media (min-width:$screen-size-pc) {
+                                                    font-size:26px;
+                                                } 
+                                            }
+
+                                            u {
+                                                display:block;
+                                                text-decoration:none;
+                                                font-size:14px;
+                                                font-weight:600;
+                                                color:#222;
+        
+                                                @media (min-width:$screen-size-pc) {
+                                                    display:inline-block;
+                                                    font-size:38px;
+                                                } 
+                                            }
+
+                                            p {
+                                                font-size:14px;
+                                                padding:0 10px;
+                                                color:#999;
+                                                word-break:keep-all;
+                                            }
+                                        }
+                                    }
+                                }
+        
+                                ul.list {
+                                    list-style:none;
+                                    padding:20px 20px 0 20px;
+                                    background:#fff;
+                                    border:1px solid #ccc;
+                                    margin:10px 0 0;
+        
+                                    li {
+                                        position:relative;
+                                        border-bottom:1px solid #ccc;
+                                        padding:0 0 20px 100px;
+                                        margin:0 0 20px;
+        
+                                        &:last-child {
+                                            border:none;
+                                            margin-bottom:0;
+                                        }
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            padding:0 0 20px 100px;
+        
+                                        } 
+
+            
+                                        h4 {
+                                            display:inline-block;
+                                            font-size:22px;
+                                            line-height:1;
+                                            margin:0 0 20px;
+                                            padding:0;
+                                            word-break:keep-all;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+                                                vertical-align:top;
+                                                line-height:1.4;
+                                            } 
+
+                                            small {
+                                                display:block;
+                                                font-size:14px;
+                                                font-weight:400;
+                                                color:#0075bc;
+                                                margin:0 0 6px;
+                                            }
+                                        }
+
+                                        p.info {
+                                            margin:0;
+                                            background:#e4e4e4;
+                                            padding:10px;
+                                        }
+        
+                                        p.price {
+                                            text-align:right;
+                                            font-size:18px;
+                                            margin:10px 0 0;
+                                            
+                                            @media (min-width:$screen-size-pc) {
+
+                                                vertical-align:top;
+        
+            
+                                            } 
+        
+                                            strong {
+                                                display:inline-block;
+                                                font-size:20px;
+                                                padding:0 4px 0 10px;
+                                            }
+                                        }
+
+                                        p.status {
+                                            position:absolute;
+                                            left:0;
+                                            top:20px;
+                                            margin:0;
+                                            font-size:16px;
+                                            color:#fff;
+                                            width:80px;
+                                            line-height:80px;
+                                            border-radius:50%;
+                                            text-align:center;
+
+                                            &.stat01 {
+                                                background:#0075bc;
+                                            }
+
+                                            &.stat02 {
+                                                background: #900000;
+                                            }
+                                        }
+        
+                                    }
+                                }
+        
+        
+                                div.btn-set {
+                                    button.btn {
+                                        height:30px;
+                                        border:none;
+                                        background:#555;
+                                        color:#fff;
+                                    }
+                                }
+            
+        
+                            }
+        
+
+                        }
+                    }
+
+
+                    &.sub-qr {
+                        text-align:center;
+                        padding:30px 0;
+                        font-size:14px;
+        
+                        @media (min-width:$screen-size-pc) {
+                            padding:50px 0 50px;
+                        } 
+        
+        
+                        div.container {
+                            h2 {
+                                text-align:center;
+                                font-size:30px;
+                                font-weight:600;
+                                margin:0 0 40px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                    font-size:36px;
+                                } 
+        
+                                &::before {
+                                    content:"";
+                                    display:block;
+                                    position:relative;
+                                    background:#900000;
+                                    bottom:-70px;
+                                    left:50%;
+                                    width:40px;
+                                    height:6px;
+                                    margin-left:-20px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        left:0;
+                                        margin-left:0;
+                                        width: 100%;
+                                        height:3px;
+                                        bottom:-86px;
+                                        background:#222;
+                                    } 
+                                }
+                            }
+        
+        
+                            div.qr {
+                                overflow:hidden;
+                                margin:0 0 20px;
+                                text-align:center;
+                                background:#fff;
+                                padding:30px 0;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    padding:50px 0;
+                                } 
+
+                                h4 {
+                                    font-size:18px;
+                                    margin:0;
+
+                                    strong {
+                                        color:#900000;
+                                    }
+                                }
+
+                                img {
+                                    width:60%;
+                                    @media (min-width:$screen-size-pc) {
+                                        width:280px;
+                                    } 
+                                }
+
+                                h5 {
+                                    font-size:18px;
+                                    margin:0;
+
+                                    small {
+                                        display:block;
+                                        font-weight:400;
+                                        margin:20px 0 0;
+
+                                        span {
+                                            display:block;
+                                        }
+                                    }
+                                }
+        
+        
+        
+                                div.btn-set {
+
+                                    margin:20px 0 30px;
+                                    font-size:16px;
+                                    text-align:center;
+        
+                                    button {
+                                        height:50px;
+                                        padding:0 16px;
+                                        border:1px solid rgba(0,0,0,0.4);
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            height:60px;
+                                            font-size:20px;
+                                            margin:0 4px;
+                                            padding:0 50px;
+                                        } 
+        
+                                        background:#555;
+                                        color:#fff;
+                                    }
+                                }
+            
+        
+                            }
+        
+
+                            
+
+                        &>div.btn-set {
+                            margin:20px 0 30px;
+                            font-size:16px;
+                            text-align:center;
+
+                            button {
+                                height:50px;
+                                padding:0 16px;
+                                border:1px solid rgba(0,0,0,0.4);
+
+                                @media (min-width:$screen-size-pc) {
+                                    height:60px;
+                                    font-size:20px;
+                                    margin:0 4px;
+                                    padding:0 50px;
+                                } 
+
+                                background:#555;
+                                color:#fff;
+
+                                &.order {
+                                    background:#0075bc;
+                                    color:#fff;
+                                }
+                            }
+
+                        }
+                            
+                        }
+                    }
+
+
+                    &.sub-charge {
+                        text-align:center;
+                        padding:30px 0;
+                        font-size:14px;
+        
+                        @media (min-width:$screen-size-pc) {
+                            padding:50px 0 50px;
+                        } 
+        
+        
+                        div.container {
+                            h2 {
+                                text-align:center;
+                                font-size:30px;
+                                font-weight:600;
+                                margin:0 0 40px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                    font-size:36px;
+                                } 
+        
+                                &::before {
+                                    content:"";
+                                    display:block;
+                                    position:relative;
+                                    background:#900000;
+                                    bottom:-70px;
+                                    left:50%;
+                                    width:40px;
+                                    height:6px;
+                                    margin-left:-20px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        left:0;
+                                        margin-left:0;
+                                        width: 100%;
+                                        height:3px;
+                                        bottom:-86px;
+                                        background:#222;
+                                    } 
+                                }
+                            }
+        
+                            div.charge {
+                                overflow:hidden;
+                                margin:0 0 20px;
+                                text-align:center;
+                                background:#fff;
+                                padding:20px;
+        
+                                @media (min-width:$screen-size-pc) {
+                                    text-align:left;
+                                } 
+
+                                div.text {
+
+                                    word-break:keep-all;
+                                    font-size:16px;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        position:relative;
+                                        padding:30px 10px 50px 180px;
+                                    } 
+
+                                    i {
+                                        font-size:120px;
+                                        color:#ccc;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            position:absolute;
+                                            left:0;
+                                            font-size:150px;
+                                        } 
+    
+                                    }
+    
+                                    h3 {
+                                        margin:20px 0 10px;
+                                        font-size:28px;
+                                        color:#0075bc;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            font-size:32px;
+                                        } 
+                                    }
+            
+    
+                                }
+
+                                fieldset {
+                                    margin:20px 0;
+                                    padding:20px;
+                                    background:#fff;
+                                    border:2px solid #ccc;
+                                    font-size:0;
+        
+                                    @media (min-width:$screen-size-pc) {
+                                        padding:30px;
+                                    } 
+
+                                    legend {
+                                        font-size:18px;
+                                        padding:0 10px;
+                                        font-weight:600;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            text-align:left;
+                                            font-size:24px;
+                                        } 
+                                    }
+
+                                    select {
+                                        width:100%;
+                                        height:44px;
+                                        font-size:16px;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            height:62px;
+                                            padding:0 20px;
+                                            width:70%;
+                                            border-right:none;
+                                            font-size:22px;
+                                        } 
+                                    }
+
+                                    button {
+                                        margin:10px 0 0;
+                                        width:100%;
+                                        height:44px;
+                                        border:none;
+                                        background:#0075bc;
+                                        color:#fff;
+                                        font-size:16px;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            height:62px;
+                                            padding:0 20px;
+                                            width:30%;
+                                            border-radius:0;
+                                            font-size:22px;
+                                        }
+                                    }
+                                }
+
+                                div.info-text {
+                                    color:#900000;
+                                    word-break:keep-all;
+                                    margin:0 0 50px;
+
+                                    p {
+                                        margin:0 0 6px;
+                                    }
+                                }
+
+                                div.cancle {
+                                    background:#ffeeee;
+                                    border:1px solid #900000;
+                                    margin: 0 0;
+                                    padding:20px;
+                                    position:relative;
+                                    color:#900000;
+                                    word-break:keep-all;
+
+                                    h3 {
+                                        margin:0 0 10px;
+                                        font-size:18px;
+                                    }
+
+                                    p {
+                                        margin:0 0 6px;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            width:67%;
+                                        }
+                                    }
+
+                                    &.before {
+                                        p {
+                                            padding:0 0 0 10px;
+                                            position:relative;
+
+                                            &::before {
+                                                content:"-";
+                                                position:absolute;
+                                                left:0;
+                                            }
+                                        }
+                                    }
+
+                                    button {
+                                        margin:10px 0 0;
+                                        width:100%;
+                                        height:44px;
+                                        border:none;
+                                        background:#900000;
+                                        color:#fff;
+                                        font-size:16px;
+        
+                                        @media (min-width:$screen-size-pc) {
+                                            height:62px;
+                                            padding:0 20px;
+                                            width:30%;
+                                            border-radius:0;
+                                            font-size:22px;
+                                            position:absolute;
+                                            right:20px;
+                                            bottom:20px;
+                                        }
+                                    }
+
+                                }
+        
+        
+            
+        
+                            }
+        
+
+                            
+
+                        &>div.btn-set {
+                            margin:20px 0 30px;
+                            font-size:16px;
+                            text-align:center;
+
+                            button {
+                                height:50px;
+                                padding:0 16px;
+                                border:1px solid rgba(0,0,0,0.4);
+
+                                @media (min-width:$screen-size-pc) {
+                                    height:60px;
+                                    font-size:20px;
+                                    margin:0 4px;
+                                    padding:0 50px;
+                                } 
+
+                                background:#555;
+                                color:#fff;
+
+                                &.order {
+                                    background:#0075bc;
+                                    color:#fff;
+                                }
+                            }
+
+                        }
+                            
+                        }
+                    }
+
+
+
+
+
+                }
+
+            }
            
+
+
+
+
 
         }
 

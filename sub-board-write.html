@@ -60,27 +60,98 @@
 
 
 
-            <section class="sub-sign-result">
+
+            <!-- 
+                마이페이지에 게시판 기능이 들어갈 경우,
+                서브메뉴용 aside 태그와  아래 section 태그를 나란히 넣고,
+                div.sub-layout으로 감싸면 됩니다.
+            -->
+
+            <section class="sub-board">
                 <div class="container">
+                    <h2>
+                        게시판 글쓰기
 
-                    <div class="result">
-                        <!-- <i class='bx bxs-user-account'></i> -->
-                            <h3>
-                                회원가입이 완료되었습니다.
-
-                                <small>
-                                    <h4>김구글</h4>
-                                    <p>asdf@gmail.com</p>
-                                    <p>010-0000-0000</p>
-                                </small>
-                            </h3>
+                        <ul class="navigation">
+                            <li>HOME</li>
+                            <li>게시판 글쓰기</li>
+                        </ul>
+                    </h2>
 
 
-                        <div class="btn-set">
-                            <a href>가입확인</a>
+
+
+
+                    <div class="view">
+
+
+
+
+                        <div class="board-box">
+
+
+                    
+                            <div class="line">
+                                <label for="title">제목</label>
+                                <input id="title" type="text">
+                            </div>
+                    
+                            <div class="line">
+                                <label for="name">이름</label>
+                                <input id="name" type="text">
+                            </div>
+                    
+                            <div class="line">
+                                <label for="pass">비밀번호</label>
+                                <input id="pass" type="password">
+                            </div>
+                    
                         </div>
+                    
+                        <div class="board-text">
+                            <label for="text">내용</label>
+                            <textarea id="text">야옹</textarea>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="file">
+                            <button class="btn main">파일첨부</button>
+                    
+                    
+                            <ul class="file">
+                                <li>
+                                    <i class='bx bx-file'></i>
+                                    <a href="" title="야옹야옹.hwp">야옹야옹.hwp</a>
+                                    <button><i class='bx bx-x'></i>첨부파일 삭제</button>
+                                </li>
+                                <li>
+                                    <i class='bx bx-file'></i>
+                                    <a href="" title="야옹야옹.hwp">야옹야옹.hwp</a>
+                                    <button><i class='bx bx-x'></i>첨부파일 삭제</button>
+                                </li>
+                            </ul>
+                    
+                        </div>
+                    
+                    
                     </div>
-    
+
+
+                    <div class="btns">
+                            <button class="button">뒤로</button>
+                            <button class="button main">작성완료</button>
+                    </div>
+
+
+
+
+
+
+
+
+
 
                 </div>
             </section>

@@ -20,6 +20,10 @@ $(document).ready(function() {
         $('#main-menu').off('scroll touchmove mousewheel');
     });
 
+    $("aside button.submenu").on("click", function(){
+        $("aside>ul").toggleClass("on");
+    });
+
     
     $('.main-slider div.slide').each(function() {
         $(this).css("background", "url('" + $(this).find("img").attr("src") + "') no-repeat center / cover");
