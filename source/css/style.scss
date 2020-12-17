@@ -876,29 +876,28 @@ body {
                                         top:210px;
                                     } 
                                 }
-
                                 p.price {
                                     position:absolute;
-                                    right:20px;
-                                    top:202px;
+                                    left:20px;
+                                    top:262px;
                                     margin:0;
                                     font-weight:600;
                                     font-size:16px;
 
                                     @media (min-width:$screen-size-pc) {
-                                        top:212px;
+                                        top:272px;
                                     } 
                                 }
 
                                 p.text {
                                     position:absolute;
                                     left:20px;
-                                    top:242px;
+                                    top:232px;
                                     margin:0;
-                                    font-size:16px;
+                                    font-size:14px;
 
                                     @media (min-width:$screen-size-pc) {
-                                        top:262px;
+                                        top:242px;
                                     } 
                                 }
                             }
