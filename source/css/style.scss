@@ -1183,18 +1183,16 @@ body {
                         margin:20px 0 30px;
                         font-weight: 400;
                         color:#FFDD00;
-                        word-break:keep-all;
-
                         @media (min-width:$screen-size-pc) {
                             position:relative;
+                            overflow:hidden;
                             z-index:10;
                             margin:40px 0 0 50px;
                             text-align:left;
-                            font-size:44px;
-                            width:462px;
+                            font-size:32px;
+                            width:452px;
+                            max-height:88px;
                             
-                            @include ellipse;
-
                         } 
                     }
 
@@ -2611,72 +2609,6 @@ body {
                         }
                     }
 
-<<<<<<< HEAD
-                    div.result {
-                        font-size:0;
-                        text-align:center;
-
-                        i {
-                            font-size:180px;
-                            color:#999;
-
-                            @media (min-width:$screen-size-pc) {
-                                margin:30px 0 0;
-                            } 
-                        }
-                        
-                        h3 {
-                            font-size:28px;
-
-                            small {
-                                display:block;
-                                font-size:16px;
-                                margin:30px 0;
-                                padding:20px;
-                                background:#fff;
-                                font-weight:400;
-                                word-break:keep-all;
-
-                                @media (min-width:$screen-size-pc) {
-                                    width:500px;
-                                    margin:20px auto 60px;
-                                } 
-
-                                h4 {
-                                    color:#0075bc;
-                                    font-size:18px;
-                                    margin:0 0 10px;
-                                }
-
-                                p {
-                                    margin:0 0 4px;
-                                }
-                            }
-                        }
-
-                        div.btn-set {
-                            margin:20px 0 30px;
-                            font-size:16px;
-                            text-align:center;
-
-                            a {
-                                display:inline-block;
-                                line-height:50px;
-                                padding:0 30px;
-                                border:1px solid rgba(0,0,0,0.4);
-                                background:#0075bc;
-                                color:#fff;
-
-                                @media (min-width:$screen-size-pc) {
-                                    padding:0 80px;
-                                    line-height:60px;
-                                    font-size:20px;
-                                    margin:0 4px;
-                                } 
-                            }
-
-                        }
-=======
                     div.list {
                         margin:50px 0 0;
 
@@ -2933,7 +2865,6 @@ body {
                             }
                         }
 
->>>>>>> b41efd9f48254bafa8a01f5a881b80960a248438
                     }
 
                     
