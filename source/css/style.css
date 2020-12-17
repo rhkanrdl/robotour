@@ -1081,7 +1081,7 @@ body div#content.main section.ai div.container div.slider div.slide a h3 {
 
 body div#content.main section.ai div.container div.slider div.slide a p.price {
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 262px;
   margin: 0;
   font-weight: 600;
@@ -1293,7 +1293,7 @@ body div#content.main section.ticket div.container div.slider div.slide a h3 {
 
 body div#content.main section.ticket div.container div.slider div.slide a p.price {
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 262px;
   margin: 0;
   font-weight: 600;
@@ -1489,7 +1489,7 @@ body div#content.sub section.sub-list div.container div.list div.item a h3 {
 
 body div#content.sub section.sub-list div.container div.list div.item a p.price {
   position: absolute;
-  left: 20px;
+  right: 20px;
   top: 262px;
   margin: 0;
   font-weight: 600;
